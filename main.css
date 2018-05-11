@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: monospace;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(image1.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+  padding: 10px 40px;
+  justify-content: center;
+
+}
+h1{
+  color: indianred;
+  margin: 0px;
+  display: inline;
+}
+.main-nav {
+  float: right;
+  margin-top: 30px;
+  padding-right: 0;
+  list-style: none;
+}
+.main-nav li{
+  display: inline-block;
+  color: white;
+
+}
+.main-nav li a{
+  color: indianred;
+  text-decoration: none;
+  padding: 5px 18px;
+  font-size: 15px;
+}
+.main-nav li.home a{
+  border: 1px solid indianred;
+
+}
+.main-nav li a:hover{
+  border: 1px solid indianred;
+}
+footer{
+  width: 100%;
+  text-align: right;
+  padding-top: 48%;
+  color: indianred;
+  font-size: 15px;
+
+}
+
+/*create flying text effect on main page (index.html)*/
+.flytext{
+  list-style: none;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translateX(-50%); transformY: (-50%);
+}
+.flytext li{
+  display: inline-block;
+  color: indianred;
+  margin-right: 32.4px;
+  font-family: Open sans,Arial;
+  font-weight: 50;
+  font-size: 3em;
+  opacity: 1;
+  transition: all 1.9s ease;
+}
+.flytext li:last-child{
+  margin-right: 0;
+}
+.flytext.hide li{
+   opacity: 0;
+}
+.flytext.hide li:nth-child(1){
+  transform: translateX(-200px) translateY(-200px);
+}
+.flytext.hide li:nth-child(2){
+  transform: translateX(20px) translateY(100px);
+}
+.flytext.hide li:nth-child(3){
+  transform: translateX(-150px) translateY(-180px);
+}
+.flytext.hide li:nth-child(4){
+  transform: translateX(10px) translateY(200px);
+}
+.flytext.hide li:nth-child(5){
+  transform: translateX(-300px) translateY(200px);
+}
+.flytext.hide li:nth-child(6){
+  transform: translateX(20px) translateY(-300px);
+}
+.flytext.hide li:nth-child(7){
+  transform: translateX(30px) translateY(200px);
+}
+/*create profile box on page2.html*/
+.box{
+  width:400px; height: 350px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 35px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'monospace', sans-serif;
+}
+.box-img{
+  background-image: url(p1.jpeg);
+  background-position: right;
+  background-size: 160%;
+  border-radius: 50%;
+  width: 190px; height: 190px;
+  border: 1.3px solid silver;
+}
+.box h3{
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 11.4px;
+  letter-spacing: 3px;
+  padding-top: 10px;
+}
+.box p{
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+ul{
+  margin: 0px;
+  padding:  20px;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  font-size: 30px;
+  transition: all ease-in-out 200ms;
+}
+.box li a:hover{
+  color: indianred;
+}
+/*Header effect*/
+.flyheader{
+  position: absolute;
+  left: 9%;
+  transform: translateX(-50%); transformY: (-30%);
+}
+.flyheader h1{
+  display: inline-block;
+  color: indianred;
+  font-family: Open sans,Arial;
+  font-weight: 100;
+  font-size: 8;
+  opacity: 1;
+  transition: all 1.2s ease;
+}
+.flyheader h1:last-child{
+  margin-right: 0;
+}
+.flyheader.hide h1{
+   opacity: 0;
+}
+.flyheader.hide h1:nth-child(1){
+  transform: translateX(200px) translateY(200px);
+}
+.flyheader.hide h1:nth-child(2){
+  transform: translateX(20px) translateY(100px);
+}
+.flyheader.hide h1:nth-child(3){
+  transform: translateX(50px) translateY(-180px);
+}
+.flyheader.hide h1:nth-child(4){
+  transform: translateX(10px) translateY(200px);
+}
+.flyheader.hide h1:nth-child(5){
+  transform: translateX(-300px) translateY(200px);
+}
+.flyheader.hide h1:nth-child(6){
+  transform: translateX(20px) translateY(-300px);
+}
+.flyheader.hide h1:nth-child(7){
+  transform: translateX(30px) translateY(100px);
+}
