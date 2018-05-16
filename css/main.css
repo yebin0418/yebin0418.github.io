@@ -8,7 +8,6 @@ body{
   height: 100vh;
   background-size: cover;
   background-position: center;
-
   padding: 10px 40px;
   justify-content: center;
 
@@ -186,4 +185,34 @@ ul{
 }
 .flyheader.hide h1:nth-child(7){
   transform: translateX(30px) translateY(100px);
+}
+
+/*page3.html*/
+.contact-title{
+  margin-top: 200px;
+  font-family: monospace;
+  text-align:  center;
+  transition: all 4s ease-in-out;
+
+}
+.contact-title h1{
+  font-size:  32px;
+  line-height: 10px;
+}
+form{
+  margin-top: 50px;
+  text-align: center;
+  transition: all 4s ease-in-out;
+
+}
+.form-control{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: : 1px solid grey;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 16px;
+
 }
