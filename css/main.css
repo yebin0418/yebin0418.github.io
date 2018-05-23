@@ -197,8 +197,93 @@ ul{
 }
 .contact-title h1{
   font-size:  32px;
+  font-weight:lighter;
   line-height: 10px;
 }
+.flycontact{
+  position: absolute;
+  left: 43%; top: 20%;
+  transform: translateX(-50%); transformY: (-30%);
+}
+.flycontact h1{
+  display: inline-flex;
+  color: mediumPurple;
+  font-family: Open sans,Arial;
+  font-weight: 50;
+  font-size: 12px;
+  opacity: 1;
+  transition: all 1.3s ease;
+}
+.flycontact h1:last-child{
+  margin-right: 0;
+}
+.flycontact.hide h1{
+   opacity: 0;
+}
+.flycontact.hide h1:nth-child(1){
+  transform: translateX(-200px) translateY(-200px);
+}
+.flycontact.hide h1:nth-child(2){
+  transform: translateX(120px) translateY(800px);
+}
+.flycontact.hide h1:nth-child(3){
+  transform: translateX(50px) translateY(-180px);
+}
+.flycontact.hide h1:nth-child(4){
+  transform: translateX(10px) translateY(200px);
+}
+.flycontact.hide h1:nth-child(5){
+  transform: translateX(300px) translateY(50px);
+}
+.flycontact.hide h1:nth-child(6){
+  transform: translateX(20px) translateY(-300px);
+}
+.flycontact.hide h1:nth-child(7){
+  transform: translateX(30px) translateY(100px);
+}
+.flycontact.hide h1:nth-child(8){
+  transform: translateX(200px) translateY(200px);
+}
+.flycontact.hide h1:nth-child(9){
+  transform: translateX(20px) translateY(100px);
+}
+.flycontact.hide h1:nth-child(10){
+  transform: translateX(50px) translateY(-180px);
+}
+.flycontact.hide h1:nth-child(11){
+  transform: translateX(10px) translateY(200px);
+}
+.flycontact.hide h1:nth-child(12){
+  transform: translateX(-300px) translateY(200px);
+}
+.flycontact.hide h1:nth-child(13){
+  transform: translateX(20px) translateY(-300px);
+}
+.flycontact.hide h1:nth-child(14){
+  transform: translateX(30px) translateY(100px);
+}
+.flycontact.hide h1:nth-child(15){
+  transform: translateX(10px) translateY(200px);
+}
+.flycontact.hide h1:nth-child(16){
+  transform: translateX(-300px) translateY(200px);
+}
+.flycontact.hide h1:nth-child(17){
+  transform: translateX(20px) translateY(-300px);
+}
+.flycontact.hide h1:nth-child(18){
+  transform: translateX(30px) translateY(100px);
+}
+.flycontact.hide h1:nth-child(19){
+  transform: translateX(50px) translateY(100px);
+}
+.flycontact.hide h1:nth-child(20){
+  transform: translateX(200px) translateY(-900px);
+}
+
+
+
+
 form{
   margin-top: 80px;
   text-align: center;
@@ -236,7 +321,7 @@ form .submit:hover{
   cursor: pointer;
 }
 ::-webkit-input-placeholder{
-  color: purple;
+  color: mediumPurple;
   font-size: 12px;
   letter-spacing: 2px;
 }
