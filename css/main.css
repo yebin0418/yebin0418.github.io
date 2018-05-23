@@ -200,10 +200,10 @@ ul{
   line-height: 10px;
 }
 form{
-  margin-top: 50px;
+  margin-top: 80px;
   text-align: center;
   transition: all 4s ease-in-out;
-
+  color: white;
 }
 .form-control{
   width: 600px;
@@ -215,4 +215,28 @@ form{
   color: white;
   margin-bottom: 16px;
 
+}
+form .name{
+  color: pink;
+}
+input{
+  height: 45 px;
+}
+form .submit{
+  background: indianred;
+  border-color: transparent;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+form .submit:hover{
+  background-color: #657cc3;
+  cursor: pointer;
+}
+::-webkit-input-placeholder{
+  color: purple;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
