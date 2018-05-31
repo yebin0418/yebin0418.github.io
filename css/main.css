@@ -54,21 +54,16 @@ footer{
 .flytext{
   list-style: none;
   position: absolute;
-  left: 50%; top: 50%;
+  left: 50%; top: 40%;
   transform: translateX(-50%); transformY: (-50%);
 }
 .flytext li{
   display: inline-block;
   color: indianred;
-  margin-right: 32.4px;
-  font-family: Open sans,Arial;
-  font-weight: 50;
-  font-size: 3em;
-  opacity: 1;
   transition: all 1.9s ease;
-}
-.flytext li:last-child{
-  margin-right: 0;
+  padding: 0px 16px 0px 0px; 
+  margin-right: 5px;
+  font: italic small-caps 2vw cursive;
 }
 .flytext.hide li{
    opacity: 0;
