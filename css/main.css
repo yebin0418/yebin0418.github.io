@@ -19,7 +19,7 @@ h1{
 }
 .main-nav {
   float: right;
-  margin-top: 30px;
+  margin-top: 5px;
   padding-right: 0;
   list-style: none;
 }
@@ -32,7 +32,7 @@ h1{
   color: indianred;
   text-decoration: none;
   padding: 5px 18px;
-  font-size: 15px;
+  font-size: 1vw;
 }
 .main-nav li.home a{
   border: 1px solid indianred;
@@ -96,7 +96,7 @@ footer{
   padding: 35px;
   text-align: center;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 10%;
   color: white;
   font-family: 'monospace', sans-serif;
 }
@@ -109,7 +109,7 @@ footer{
   border: 1.3px solid silver;
 }
 .box h3{
-  font-size: 30px;
+  font-size: 1vw;
   letter-spacing: 4px;
   font-weight: 100;
 }
@@ -139,10 +139,11 @@ ul{
 .box li a:hover{
   color: indianred;
 }
+
 /*Header effect*/
 .flyheader{
   position: absolute;
-  left: 9%;
+  margin-left: 5%;
   transform: translateX(-50%); transformY: (-30%);
 }
 .flyheader h1{
@@ -150,7 +151,7 @@ ul{
   color: indianred;
   font-family: Open sans,Arial;
   font-weight: 100;
-  font-size: 8;
+  font-size: 2vw;
   opacity: 1;
   transition: all 1.2s ease;
 }
@@ -188,10 +189,9 @@ ul{
   font-family: monospace;
   text-align:  center;
   transition: all 4s ease-in-out;
-
 }
 .contact-title h1{
-  font-size:  32px;
+  font-size:  1.5vw;
   font-weight:lighter;
   line-height: 10px;
 }
@@ -201,7 +201,8 @@ ul{
   transform: translateX(-50%); transformY: (-30%);
 }
 .flycontact h1{
-  display: inline-flex;
+  display: inline-block;
+  margin-top: 10%;
   color: mediumPurple;
   font-family: Open sans,Arial;
   font-weight: 50;
@@ -275,9 +276,6 @@ ul{
 .flycontact.hide h1:nth-child(20){
   transform: translateX(200px) translateY(-900px);
 }
-
-
-
 
 form{
   margin-top: 80px;
