@@ -1,79 +1,320 @@
-.mainpage{
-  font-family: monospace, Halvetica, sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-  background-image:url(main.jpg);
-  background-image:url(second.jpg);
-  background-image:url(third.jpg);
-  background-image:url(fourth.jpg);
-  background-size: cover;
-  -webkit-animation-name: maintransition;
-  -webkit-animation-duration:  17s;
-  animation-name:  maintransition;
-  animation-duration: 17s;
-  animation-iteration-count:infinite;
+*{
+  margin: 0;
+  padding: 0;
 }
-@-webkit-keyframes maintransition {
-  0% { background-image:url(main.jpg);}
-  30% { background-image:url(third.jpg);}
-  60% { background-image:url(second.jpg);}
-  100% { background-image:url(fourth.jpg);}
+body{
+  font-family: monospace;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(image1.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 10px 40px;
+  justify-content: center;
+
+}
+h1{
+  color: indianred;
+  margin: 0px;
+  display: inline;
+}
+.main-nav {
+  float: right;
+  margin-top: 5px;
+  padding-right: 0;
+  list-style: none;
+}
+.main-nav li{
+  display: inline-block;
+  color: white;
+
+}
+.main-nav li a{
+  color: indianred;
+  text-decoration: none;
+  padding: 5px 18px;
+  font-size: 1vw;
+}
+.main-nav li.home a{
+  border: 1px solid indianred;
+
+}
+.main-nav li a:hover{
+  border: 1px solid indianred;
+}
+footer{
+  width: 100%;
+  text-align: right;
+  padding-top: 48%;
+  color: indianred;
+  font-size: 15px;
+
 }
 
-@keyframes maintransition {
-  0% { background-image:url(main.jpg);}
-  30% { background-image:url(third.jpg);}
-  60% { background-image:url(second.jpg);}
-  100% { background-image:url(fourth.jpg);}
+/*create flying text effect on main page (index.html)*/
+.flytext{
+  list-style: none;
+  position: absolute;
+  left: 50%; top: 40%;
+  transform: translateX(-50%); transformY: (-50%);
 }
-.topnav{
-  overflow: hidden;
-  left: 5%;
+.flytext li{
+  display: inline-block;
+  color: indianred;
+  transition: all 1.9s ease;
+  padding: 0px 16px 0px 0px; 
+  margin-right: 5px;
+  font: italic small-caps 2vw cursive;
 }
-header{
-  min-height: 30px;
-  font-style: italic;
-  font: bickley;
+.flytext.hide li{
+   opacity: 0;
 }
-header #branding{
-  float: left;
-  margin-top: -30px;
+.flytext.hide li:nth-child(1){
+  transform: translateX(-200px) translateY(-200px);
+}
+.flytext.hide li:nth-child(2){
+  transform: translateX(20px) translateY(100px);
+}
+.flytext.hide li:nth-child(3){
+  transform: translateX(-150px) translateY(-180px);
+}
+.flytext.hide li:nth-child(4){
+  transform: translateX(10px) translateY(200px);
+}
+.flytext.hide li:nth-child(5){
+  transform: translateX(-300px) translateY(200px);
+}
+.flytext.hide li:nth-child(6){
+  transform: translateX(20px) translateY(-300px);
+}
+.flytext.hide li:nth-child(7){
+  transform: translateX(30px) translateY(200px);
+}
+/*create profile box on page2.html*/
+.box{
+  width:400px; height: 350px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 35px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  color: white;
+  font-family: 'monospace', sans-serif;
+}
+.box-img{
+  background-image: url(p1.jpeg);
+  background-position: right;
+  background-size: 160%;
+  border-radius: 50%;
+  width: 190px; height: 190px;
+  border: 1.3px solid silver;
+}
+.box h3{
+  font-size: 1vw;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 11.4px;
+  letter-spacing: 3px;
+  padding-top: 10px;
+}
+.box p{
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+ul{
+  margin: 0px;
+  padding:  20px;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  font-size: 30px;
+  transition: all ease-in-out 200ms;
+}
+.box li a:hover{
+  color: indianred;
+}
+
+/*Header effect*/
+.flyheader{
+  position: absolute;
+  margin-left: 5%;
+  transform: translateX(-50%); transformY: (-30%);
+}
+.flyheader h1{
+  display: inline-block;
+  color: indianred;
+  font-family: Open sans,Arial;
+  font-weight: 100;
+  font-size: 2vw;
+  opacity: 1;
+  transition: all 1.2s ease;
+}
+.flyheader h1:last-child{
+  margin-right: 0;
+}
+.flyheader.hide h1{
+   opacity: 0;
+}
+.flyheader.hide h1:nth-child(1){
+  transform: translateX(200px) translateY(200px);
+}
+.flyheader.hide h1:nth-child(2){
+  transform: translateX(20px) translateY(100px);
+}
+.flyheader.hide h1:nth-child(3){
+  transform: translateX(50px) translateY(-180px);
+}
+.flyheader.hide h1:nth-child(4){
+  transform: translateX(10px) translateY(200px);
+}
+.flyheader.hide h1:nth-child(5){
+  transform: translateX(-300px) translateY(200px);
+}
+.flyheader.hide h1:nth-child(6){
+  transform: translateX(20px) translateY(-300px);
+}
+.flyheader.hide h1:nth-child(7){
+  transform: translateX(30px) translateY(100px);
+}
+
+/*page3.html*/
+.contact-title{
+  margin-top: 200px;
+  font-family: monospace;
+  text-align:  center;
+  transition: all 4s ease-in-out;
+}
+.contact-title h1{
+  font-size:  1.5vw;
+  font-weight:lighter;
+  line-height: 10px;
+}
+.flycontact{
+  position: absolute;
+  left: 43%; top: 20%;
+  transform: translateX(-50%); transformY: (-30%);
+}
+.flycontact h1{
+  display: inline-block;
+  margin-top: 10%;
+  color: mediumPurple;
+  font-family: Open sans,Arial;
+  font-weight: 50;
+  font-size: 12px;
+  opacity: 1;
+  transition: all 1.3s ease;
+}
+.flycontact h1:last-child{
+  margin-right: 0;
+}
+.flycontact.hide h1{
+   opacity: 0;
+}
+.flycontact.hide h1:nth-child(1){
+  transform: translateX(-200px) translateY(-200px);
+}
+.flycontact.hide h1:nth-child(2){
+  transform: translateX(120px) translateY(800px);
+}
+.flycontact.hide h1:nth-child(3){
+  transform: translateX(50px) translateY(-180px);
+}
+.flycontact.hide h1:nth-child(4){
+  transform: translateX(10px) translateY(200px);
+}
+.flycontact.hide h1:nth-child(5){
+  transform: translateX(300px) translateY(50px);
+}
+.flycontact.hide h1:nth-child(6){
+  transform: translateX(20px) translateY(-300px);
+}
+.flycontact.hide h1:nth-child(7){
+  transform: translateX(30px) translateY(100px);
+}
+.flycontact.hide h1:nth-child(8){
+  transform: translateX(200px) translateY(200px);
+}
+.flycontact.hide h1:nth-child(9){
+  transform: translateX(20px) translateY(100px);
+}
+.flycontact.hide h1:nth-child(10){
+  transform: translateX(50px) translateY(-180px);
+}
+.flycontact.hide h1:nth-child(11){
+  transform: translateX(10px) translateY(200px);
+}
+.flycontact.hide h1:nth-child(12){
+  transform: translateX(-300px) translateY(200px);
+}
+.flycontact.hide h1:nth-child(13){
+  transform: translateX(20px) translateY(-300px);
+}
+.flycontact.hide h1:nth-child(14){
+  transform: translateX(30px) translateY(100px);
+}
+.flycontact.hide h1:nth-child(15){
+  transform: translateX(10px) translateY(200px);
+}
+.flycontact.hide h1:nth-child(16){
+  transform: translateX(-300px) translateY(200px);
+}
+.flycontact.hide h1:nth-child(17){
+  transform: translateX(20px) translateY(-300px);
+}
+.flycontact.hide h1:nth-child(18){
+  transform: translateX(30px) translateY(100px);
+}
+.flycontact.hide h1:nth-child(19){
+  transform: translateX(50px) translateY(100px);
+}
+.flycontact.hide h1:nth-child(20){
+  transform: translateX(200px) translateY(-900px);
+}
+
+form{
+  margin-top: 80px;
+  text-align: center;
+  transition: all 4s ease-in-out;
   color: white;
 }
-.topnav a{
+.form-control{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: : 1px solid grey;
+  font-size: 20px;
   color: white;
-  display: block;
-  float:left;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-style: normal;
-  padding: 0px 20px 0px 30px;
+  margin-bottom: 16px;
+
 }
-.topnav a:hover{
-	background-color: darkkhaki;
-	color: white;
+form .name{
+  color: pink;
 }
-.topnav .icon {
-  display: none;
+input{
+  height: 45 px;
 }
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+form .submit{
+  background: indianred;
+  border-color: transparent;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
 }
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+form .submit:hover{
+  background-color: #657cc3;
+  cursor: pointer;
+}
+::-webkit-input-placeholder{
+  color: mediumPurple;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
